@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const server = app.listen(port, () => console.log(`Running on: ${port}`));
+app.listen(port, () => console.log(`Running on: ${port}`));
 
 app.get("/", (req, res) => {
   res.sendStatus(200);
