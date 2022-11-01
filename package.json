@@ -1,0 +1,26 @@
+{
+  "name": "turbo-car-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilashism/turbo-car-server.git"
+  },
+  "author": "Md. Taifuzzaman Bilash <bilashism@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilashism/turbo-car-server/issues"
+  },
+  "homepage": "https://github.com/bilashism/turbo-car-server#readme"
+}
