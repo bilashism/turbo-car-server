@@ -49,9 +49,16 @@ const run = async () => {
 
     // get all services
     app.get("/services", async (req, res) => {
+      const search = req?.query?.search;
+      console.log(search);
       const query = {};
+      if (search.trim()) {
+        query.$text = {
+          $search: search
+        };
+      }
       const options = {};
-      const order = req.query.order === "asc" ? -1 : 1;
+      const order = req?.query?.order === "asc" ? -1 : 1;
       const cursor = serviceCollection
         .find(query, options)
         .sort({ price: order });
